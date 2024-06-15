@@ -1,0 +1,50 @@
+/*1
+.background-example{
+    background-color: lightblue;
+    background-image: url('images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+*/
+
+
+
+
+.background-example{
+    background-color: white;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-size: 200% 100%;
+    background-position: left bottom;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    animation: background-animation 5s infinite alternate;
+    border-animation: 3s infinite alternate;
+    transition: transform 0.5s, box-shadow 0.5s;
+
+}
+
+@keyframes background-animation{
+    form{
+        background-position:left bottom;
+    }
+    to{
+        background-position: right bottom;
+    }
+}
+
+@keyframes border-animation{
+    0%{
+        border-color: #ccc;
+    }
+    50%{
+        border-color: #ff0000;
+    }
+    100%{
+        border-color: #ccc;
+    }
+}
