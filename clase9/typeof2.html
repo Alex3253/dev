@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de typeof</title>
+</head>
+<body>
+    <h1>Lista de frutas</h1>
+    <ul id="frutas-lista"></ul>u
+    <script>
+        //declarar un arreglo de frutas
+        const frutas = ["manzanas", "banana", "Naranja", "Fresa", "Mango"];
+
+        //obtener el elelmento <ul> donde se mostraran las frutas
+        const lista = document.getElementById("frutas-lista");
+
+        //recorrer el arreglo usando un bucle for
+        
+        for(let i = 0; i < frutas.length; i++) {
+            //crear un nuevo ellemento<li> para cada fruta
+            const item = document.createElement("li");       
+            //establecer el texto del elelmento<li> al valor actual de larreglo
+            item.textContent = frutas[i];
+            //agregar el lelemento<li>  a la lista<ul>
+            lista.appendChild(item);            ///
+        }
+           
+    </script>
+    
+</body>
+</html>
