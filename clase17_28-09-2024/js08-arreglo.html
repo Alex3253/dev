@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>JS</title>
+</head>
+<body>
+    <header>
+        <h1>Método de arreglos</h1>
+    </header>
+    <main>
+        <h2>Registro de matrículas</h2>
+        <section id="entrada">
+            <label for="txtCodigo">Codigo:</label>
+            <input type="text" id="txtCodigo">
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id="txtNombre">
+            <label for="txtNivel">Nivel:</label>
+            <input type="text" id="txtNivel">
+            <button onclick="btnAgregar()">Agregar</button>
+        </section>
+
+        <section id="consulta">
+            <h2>Consulta de Estudiantes</h2>
+            <div>
+                <label for="txtConsultaCodigo">Consultar por codigo:</label>
+                <input type="text" id="txtConsultaCodigo">
+                <button onclick="btnConsultarCodigo()">Buscar</button>
+            </div>
+            <div>
+                <label for="txtConsultaNivel">Consultar por nivel:</label>
+                <input type="text" id="txtConsultaNivel">
+                <button onclick="btnConsultarNivel()">Buscar</button>
+            </div>
+        </section>
+
+        <section id="titulo">
+            <h2>Reporte de Estudiantes</h2>
+        </section>
+        <section id="salida">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombres</th>
+                        <th>Nivel</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h2>Curso de Javascript</h2>
+    </footer>
+    <script src="js/app08.js"></script>
+</body>
+</html>
