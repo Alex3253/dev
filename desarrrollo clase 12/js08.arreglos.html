@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <title>Registro de Matriculas</title> 
+</head>
+<body>
+    <header>
+        <h1><img src="images.jpg" alt=""></h1> 
+    </header>
+    <main>
+        <hr> 
+        <h2>Registro</h2> 
+        
+        <section id="Agregar"> 
+            <label for="txtcodigo">Ingresa el codigo del estudiante:</label>
+            <input type="text" id="txtcodigo"> 
+
+            <label for="txtnombre">Ingresa el nombre completo del estudiante:</label>
+            <input type="text" id="txtnombre"> 
+
+            <label for="txtnivel">Ingresa el nivel del estudiante:</label>
+            <input type="text" id="txtnivel"> 
+
+            <div class="btn-container">
+                <button onclick="btnAgregar()">Agregar</button> 
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section id="Consulta"> 
+            <h2>Consultar Estudiante</h2>
+            <label for="txtConsultaCodigo">Buscar por Codigo:</label>
+            <input type="text" id="txtConsultaCodigo"> 
+            <button onclick="buscarEstudiante()">Buscar</button> 
+
+            <label for="txtConsultaNivel">Buscar por Nivel:</label>
+            <input type="text" id="txtConsultaNivel"> 
+            <button onclick="buscarEstudiante()">Buscar</button> 
+        </section>
+
+        <section id="titulo"> 
+            <h2>Estudiantes registrados en CERTUS</h2>
+        </section>
+
+        <section id="salida"> 
+            <table>
+                <thead>
+                    <tr>
+                        <!--encabezados de columnnas-->
+                        <th>Codigo</th> 
+                        <th>Nombres</th> 
+                        <th>Nivel</th> 
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui se llenaron los datos de los estudiantes registrados -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h2>Curso de Desarrollo y soporte de aplicaciones multiplataforma</h2> <!-- Pie de pagina que describe el curso -->
+    </footer>
+    <script src="js/app08.js"></script> 
+</body>
+</html>
+
+
